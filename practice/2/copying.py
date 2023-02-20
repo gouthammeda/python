@@ -75,25 +75,3 @@ print('New List:', new_list)
 print('ID of new List:', id(new_list))
 
 
-# a_list = [1,2,3,4,5,6]
-# print(id(a_list))
-#
-# bList = a_list
-# print(id(bList))
-#
-# bList.append(10)
-#
-# print(a_list)
-# print(bList)
-# import copy
-#
-# c_list = copy.copy(bList)
-# print(id(c_list))
-#
-# c_list.append(3)
-# print(bList)
-# print(c_list)
-
-
-
-# references are still the same but c_list and b_list are created in separate memory locations
