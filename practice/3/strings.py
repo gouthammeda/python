@@ -102,6 +102,18 @@ print("The result was {r:0.5f}".format(r=result))
 # add 10-4 = 6 spaces before decimal string while printing, consider 3 precision values out of 16 while printing.
 print("The result was {f:10.2f}".format(f=result))
 
+# F-Strings
+name = "goutham"
+age = 30
+sal = 10000
+a = 10
+b = 20
+info = f"Name:{name.upper()},age:{age},salary:{sal}"
+info1 = f"Name:{name},age:{a+b},salary:{sal}"
+print("The information is", info)
+print(info1)
+print(f"The result was {result:10.2f}")
+
 # String case conversion methods
 aString = 'egG BacOn SauSAGE loBSter'
 print(aString.lower())
@@ -148,6 +160,92 @@ print(aString.index('am'))
 print(aString.rindex('am'))
 
 #print(aString.index('amiam'))
+
+print("-----character classification Methods------")
+
+# checks if string is combination of alphabets and numbers returns true if it is.
+s = 'abc123'
+print(s.isalnum())
+
+# checks if string contains only alphabets it will return true if it is
+print(s.isalpha())
+
+# if string contains only numbers string will return true or false.
+s = "12345"
+print(s.isdigit())
+
+"""
+Identifier: identifier is a name used to define a variable,function,class or some other object.
+
+python identifiers:
+Must begin with an alphabetic character or underscore(_)
+can be a single character 
+can be followed by any alphanumeric or underscore
+cannot have other punctuation characters [NBSP]
+"""
+
+# identifier shouldn't start with digit.
+s = "32Ident"
+
+print(s.isidentifier())
+
+"""
+    If the string has only whitespaces without any other characters then returns true else false.
+"""
+
+print(" ".isspace())
+
+print("Hello Pridhvi\nHow are you")
+print("Hello Prudhvi\tHow are you")
+s = "\t\n"
+print("\t\n")
+print(s.isspace())
+
+print("The Sun Also Rises".istitle())
+print("SPAMBACON".isupper())
+print("anbbdbdbd".islower())
+print('ABCabc#$%'.isascii())
+
+print('AbcΣ'.isascii())# Σ is not ascii so
+# if we encode with utf-8 then we will not get any error as computer understand the sigma symbol now.
+'AbcΣ'.encode("utf-8")
+
+print("------String formatting methods--------")
+
+print('spam'.center(9))
+print('spam'.center(9, '&'))
+
+s = '     spam bacon egg     '
+
+print(s.strip())  # It removes the white spaces by default if any in the prefix and suffix of a string
+print(s.lstrip()) # It removes the white spaces by default if any in the prefix of a  string
+print(s.rstrip()) # It removes the white spaces by default if any in the suffix of a  string
+
+# strip, lstrip, rstrip will also take a regex as an input and removes it if the regex is found in a string
+st = 'ababababspam bacon egg     '
+print(st.strip('ab'))
+
+# lstrip removes /:pth characters present in the link which are at beginning but in the middle it is not possible
+link = 'http://www.python.com '
+print(link.lstrip('/:pth'))
+link = 'tt www.python.com ttrhp://'
+# strip removes both starting and ending characters in the link.
+print(link.strip('htp:/'))
+print(link.lstrip('thp:/'))
+print(link.lstrip(':/'))
+print(link.lstrip('pth'))
+
+aString = "#... Prudhvi ... Akella..."
+print(aString.strip("#."))
+print(aString.lstrip("#."))
+print(aString.rstrip("."))
+
+# we can add the spaces to be present in the tab character here it is 10.
+s = "a\tb\tc"
+# print(s)
+print(s.expandtabs(10))
+
+
 
 
 
