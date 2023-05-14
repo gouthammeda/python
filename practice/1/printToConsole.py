@@ -1,5 +1,5 @@
 """
-
+print to console.
 """
 
 "Hello World"
@@ -11,7 +11,7 @@
 # print(False)
 
 # print("Hello World")
-# print("Hello\nworld")
+# print("Hello\n world")
 # print("Hello\tworld")
 # print('Hello \' World')
 # print("Hello \" World")
@@ -26,17 +26,17 @@ print("T.....T.....T.....T.....T.....T.....T.....T")
 print("-------output of \\ ------")
 print("Please print backslash(\\) on to the console")
 print("\"She told me,\'I have no idea what\'s going on,\'\",he said.")
-#,is not needed
+# ,is not needed
 print("hello \\\\ nani")
 
 
 # print('-----------------\n')
 # print("Hello")
-print('-----------------',end="abc")
-print("Hello",end=",")
+print('-----------------', end="abc")
+print("Hello", end=",")
 print("World")
 
-print('-----------------',end="@")
+print('-----------------', end="@")
 print("Hello", end=",")
 print("World")
 
