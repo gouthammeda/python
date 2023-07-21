@@ -58,6 +58,7 @@ with open("sample.txt", 'r') as file:
 
 print("--writing data to file--")
 
+# writing content into a file
 file = open('sample_write.txt','w')
 
 file.write("Hello World\n")
@@ -65,6 +66,45 @@ file.write("Be optimistic\n")
 file.write("Everything will be alright\n")
 
 file.close()
+
+# if file exists then content will be overriden.
+with open('sample_write.txt','w+') as file:
+    for i in range(3):
+        file.write(f'line {i} \n')
+
+# open the file for both read and write if file already exists then content will be appended to an end of file
+
+file = open('sample_write.txt','a+')
+file.write("Hello world \n")
+file.write("Be optimistic \n")
+file.write("Everything will be alright \n")
+
+file.close()
+
+
+print("-------------------------------- Processing CSV file ----------------------------------------------")
+import csv
+
+csv_filepath_to_process = "/Users/gouthamkumarreddymeda/workspace/PycharmProjects/DVSpython/4/csv/csv1.csv"
+file = open(csv_filepath_to_process, 'r')
+csv_reader = csv.reader(file, delimiter=",")
+for line in csv_reader:
+    print(line)
+
+# removing white spaces in front of file
+file = open(csv_filepath_to_process, 'r')
+csv_reader = csv.reader(file, delimiter=",", skipinitialspace=True)
+for line in csv_reader:
+    print(line)
+
+reader = csv.reader(file, quoting=csv.QUOTE_MINIMAL, skipinitialspace=True)
+for line in csv_reader:
+    print(line)
+
+
+
+
+
 
 
 

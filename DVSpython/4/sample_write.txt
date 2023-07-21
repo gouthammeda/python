@@ -1,0 +1,6 @@
+line 0 
+line 1 
+line 2 
+Hello world 
+Be optimistic 
+Everything will be alright 

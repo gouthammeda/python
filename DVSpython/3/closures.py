@@ -51,7 +51,6 @@ def multiplier(x):
 
 # these function calls create three closures.Each function multiplies a number with 1,3 and 3.
 
-
 m1 = multiplier(1)
 m2 = multiplier(2)
 m3 = multiplier(3)
