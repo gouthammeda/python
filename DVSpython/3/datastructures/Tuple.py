@@ -34,7 +34,7 @@ print(a)
 print(b)
 print(c)
 
-my_tuple = ("hello")
+my_tuple = "hello"
 print(type(my_tuple))
 
 # creating tuple having one element
@@ -123,7 +123,8 @@ for name in ('John', 'Kate'):
 print(my_tuple.__sizeof__())
 
 
-# we are accessing cat's method and dog method with their respective references being passed as tuple and using common animal variable to iterate because of polymorphism.
+# we are accessing cat's method and dog method with their respective references being passed as tuple and using
+# common animal variable to iterate because of polymorphism.
 class Cat:
     def __init__(self, name, age):
         self.name = name

@@ -22,20 +22,20 @@ print("Current year:", today.year)
 print("Current month:", today.month)
 print("Current day:", today.day)
 
-a=time()
-print("a=",a)
+a = time()
+print("a=", a)
 
 print(current_date_time.date())
 print(current_date_time.time())
 
-b=time(11,34,56)
-print("b=",b)
+b = time(11, 34, 56)
+print("b=", b)
 
-c=time(hour=11,minute=34,second=56)
-print("c=",c)
+c = time(hour=11, minute=34, second=56)
+print("c=", c)
 
-d = time(11,34,56,234566)
-print("d=",d)
+d = time(11, 34, 56, 234566)
+print("d=", d)
 
 print("-display hour,minute,second,microsecond-")
 
@@ -43,7 +43,7 @@ print("-display hour,minute,second,microsecond-")
 t1 = date(year=2018, month=7, day=12)
 t2 = date(year=2017, month=12, day=23)
 
-t3 = t1-t2
+t3 = t1 - t2
 print("t3=", t3)
 
 print("--using timedelta objects--")
@@ -82,7 +82,7 @@ date_object = dt.strptime(date_string, "%d %B, %Y")
 print("date_object=", date_object)
 
 local = dt.now()
-print("Local:",local.strftime("%m/%d/%y,%H:%M:%S"))
+print("Local:", local.strftime("%m/%d/%y,%H:%M:%S"))
 
 tz_NY = pytz.timezone('America/New_York')
 datetime_NY = dt.now(tz_NY)
@@ -91,6 +91,7 @@ print("NY:", datetime_NY.strftime("%m/%d/%Y, %H:%M:%S"))
 tz_London = pytz.timezone('Europe/London')
 datetime_London = dt.now(tz_London)
 print("London:", datetime_London.strftime("%m/%d/%Y, %H:%M:%S"))
+
 
 # yielding a set of dates within date range.
 def daterange(start_date, end_date):
@@ -102,10 +103,3 @@ start_date = date(2013, 1, 1)
 end_date = date(2015, 6, 2)
 for single_date in daterange(start_date, end_date):
     print(single_date.strftime("%Y-%m-%d"))
-
-
-
-
-
-
-

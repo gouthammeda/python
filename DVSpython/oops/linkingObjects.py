@@ -29,8 +29,9 @@ class Dog:
     def setbuddy(self, buddy_ref):
         print("self:", hex(id(snoopy)))
         print("buddy:", hex(id(buddy_ref)))
-        # we are creating one-to-one relationship between two object as by creating self.buddy instance variable in snoopy object with buddys reference variable
-        # and buddy.buddy instance level variable with filou as a reference.
+        # we are creating one-to-one relationship between two object as by creating self.buddy instance variable in
+        # snoopy object with buddy's reference variable and buddy.buddy instance level variable with filou as a
+        # reference.
         self.buddy = buddy_ref
         buddy_ref.buddy = self
 

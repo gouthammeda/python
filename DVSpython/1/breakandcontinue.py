@@ -16,8 +16,8 @@ while True:  # infinite loop -> we use this when we don't know the exit conditio
     print(aList.pop(-1))
 print("Statements after the while")
 
-# continue will not exit the loop, but instead it will go to next immediate iteration by skipping the remaining steps for present iteration in the loop.
-# print(2) will not be executed.
+# continue will not exit the loop, but instead it will go to next immediate iteration by skipping the remaining steps
+# for present iteration in the loop. print(2) will not be executed.
 print('-----continue output-----')
 n = 5
 while n > 0:
@@ -27,9 +27,10 @@ while n > 0:
     print(n)
 print("Loop ended.")
 
-# when while loop is made forcefully exited then else is not executed but when it is made to run all runs successfully then else is executed.
-# else block is used to know the statements to execute if while got exited by itself or by the user. if while success then we will do certain things
-# if it is exited by user then we will do another set of things.
+# when while loop is made forcefully exited then else is not executed but when it is made to run all runs
+# successfully then else is executed. else block is used to know the statements to execute if while got exited by
+# itself or by the user. if while success then we will do certain things if it is exited by user then we will do
+# another set of things.
 print('-----else success case-----')
 n = 5
 while n > 0:

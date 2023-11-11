@@ -17,20 +17,19 @@ print("-----step--------")
 print(a[0:7:2])
 print(a[0:7:5])
 
-# Note: when using a reverse step the lower boundary should be higher index and upper boundary should be lower index.
-print(a[13:2:-1])
+# Note: when using a reverse step the lower boundary should be higher index and upper boundary should be low index.
+print("reverse string", a[13:2:-1])
 print(a[13:2:-2])
 
 print(a[::-1])
 
 # TODO print the elements of the string in reverse order using tail recursion
-
 print(a[:6] + 'U' + a[7:])
 
 colors = ['red', 'green', 'blue', 'orange']
 # create a slice object whose start is 0, stop is 4, and step is 2.
 s = slice(0, 4, 2)
-# print(s)
+print(s)
 
 # return a tuple of indices of slice of sequence whose length is length of colors list.
 t = s.indices(len(colors))
@@ -50,7 +49,7 @@ print(colors[0:4:2])
 y = chr(65)
 print(type(y), y)
 
-for i in range(65, 65+26):
+for i in range(65, 65 + 26):
     print(chr(i), end=",")
 
 # printing ASCII characters until its range.
@@ -67,7 +66,7 @@ end = 1114111
 # ord() does the reverse of chr()
 # convert ascII unicode character 'A' to 65
 y = ord('A')
-print(type(y),y)
+print(type(y), y)
 
 alphabet_list = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -94,7 +93,7 @@ print("Name:{};Age:{};Salary:{}".format(name, age, salary))
 print("Name:{2};Age:{1};Salary:{0}".format(name, age, salary))
 print("Name:{n};Age:{a};Salary:{sal}".format(n=name, a=age, sal=salary))
 
-result = 100/777
+result = 100 / 777
 print(result)
 
 # don't add spaces before decimal string and consider 5 precision value out of 16
@@ -109,7 +108,7 @@ sal = 10000
 a = 10
 b = 20
 info = f"Name:{name.upper()},age:{age},salary:{sal}"
-info1 = f"Name:{name},age:{a+b},salary:{sal}"
+info1 = f"Name:{name},age:{a + b},salary:{sal}"
 print("The information is", info)
 print(info1)
 print(f"The result was {result:10.2f}")
@@ -140,8 +139,7 @@ print('spam ham clam jam'.startswith('spam'))
 print('spam ham clam jam'.startswith('spam', 0, 9))
 
 s = 'spam ham clam jam'
-print(s.startswith('spam',0,9))
-
+print(s.startswith('spam', 0, 9))
 
 s = 'spam bacon egg sausage'
 print(s.find('egg'))
@@ -155,11 +153,11 @@ print(aString.find("amiam"))
 
 print(aString.rfind('am'))
 
-# index works similar to find the but if pattern is not it throws exception.
+# index works similar to find but if pattern is not there it throws exception.
 print(aString.index('am'))
 print(aString.rindex('am'))
 
-#print(aString.index('amiam'))
+# print(aString.index('amiam'))
 
 print("-----character classification Methods------")
 
@@ -206,7 +204,7 @@ print("SPAMBACON".isupper())
 print("anbbdbdbd".islower())
 print('ABCabc#$%'.isascii())
 
-print('AbcΣ'.isascii())# Σ is not ascii so
+print('AbcΣ'.isascii())  # Σ is not ascii so
 # if we encode with utf-8 then we will not get any error as computer understand the sigma symbol now.
 'AbcΣ'.encode("utf-8")
 
@@ -218,8 +216,8 @@ print('spam'.center(9, '&'))
 s = '     spam bacon egg     '
 
 print(s.strip())  # It removes the white spaces by default if any in the prefix and suffix of a string
-print(s.lstrip()) # It removes the white spaces by default if any in the prefix of a  string
-print(s.rstrip()) # It removes the white spaces by default if any in the suffix of a  string
+print(s.lstrip())  # It removes the white spaces by default if any in the prefix of a  string
+print(s.rstrip())  # It removes the white spaces by default if any in the suffix of a  string
 
 # strip, lstrip, rstrip will also take a regex as an input and removes it if the regex is found in a string
 st = 'ababababspam bacon egg     '
@@ -244,35 +242,3 @@ print(aString.rstrip("."))
 s = "a\tb\tc"
 # print(s)
 print(s.expandtabs(10))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

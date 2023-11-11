@@ -54,9 +54,8 @@ for number in aRange:
 # print(aSquares)
 
 # Python Syntactic Sugar
-
-# syntax: [<expression to generate a new value into output list for each iteration> <iterator><conditional expression>(optional)]
-# list comprehension without condition exp or statement
+# syntax: [<expression to generate a new value into output list for each iteration> <iterator><conditional
+# expression>(optional)] list comprehension without condition exp or statement
 squares = [i * i for i in range(1, 10)]
 print(squares)
 

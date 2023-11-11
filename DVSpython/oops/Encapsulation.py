@@ -7,9 +7,9 @@ This puts restrictions on accessing variables and methods directly and can preve
 class Computer:
 
     def __init__(self):
-        # private variable i.e., scope of it is maintained only within the class they can't be changed outside class and can be accessed only using the
-        # getter and setter methods mentioned in the class
-        # these symbols are used to denote access modifiers like private, public here it is private.
+        # private variable i.e., scope of it is maintained only within the class they can't be changed outside class
+        # and can be accessed only using the getter and setter methods mentioned in the class these symbols are used
+        # to denote access modifiers like private, public here it is private.
         self.__maxprice = 900
 
     # sell: Getter method to get the value of __maxprice
@@ -34,14 +34,5 @@ c.__maxprice = 1000
 print(c.__maxprice)
 
 max_value = c.sell()
-#private maxprice | public __maxPrice
-print("Value of computer today is:"+str(max_value))
-
-
-
-
-
-
-
-
-
+# private maxprice | public __maxPrice
+print("Value of computer today is:" + str(max_value))

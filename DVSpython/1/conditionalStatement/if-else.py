@@ -7,7 +7,7 @@ if <condition>:
 <code after if>
 """
 
-if 30 < 20:
+if 30 > 20:
     print("Debug1")
     print("Debug2")
     print("Debug3")
@@ -40,7 +40,8 @@ else:
 
 print("After if-elif-else statement")
 
-# nested if-> there will be outer layer and inner layer of conditional statements that is called as nested conditional statement
+# nested if-> there will be outer layer and inner layer of conditional statements that is called as nested
+# conditional statement
 age = int(input("Please enter your age:"))
 gender = input("Please enter your gender(M OR F):")
 if age < 18:
@@ -86,7 +87,8 @@ else:
 print("-----Expression-----")
 # Conditional Expression
 
-# '<value to be executed when if condition is true>' if <condition> else '<value to be returned when condition is false>'
+# '<value to be executed when if condition is true>' if <condition> else '<value to be returned when condition is
+# false>'
 s = 'minor' if age < 21 else 'adult'
 print(s)
 print("-----------")

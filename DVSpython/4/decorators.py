@@ -1,55 +1,63 @@
-#TODO revisit decorators again.
-# # here we are having higher order function which takes function as input and returns wrapper function as output.
-# # whatever the function we are passing as the input for closure we are calling that function inside wrapper.
-# def uppercase_decorator(function):
-#    # here wrapper is a closure
-#     def uppercase_wrapper():
-#         # here we are making the function executable and making result accessible.
-#         func_output = function()
-#         make_uppercase = func_output.upper()
-#         return make_uppercase
-#    # returning closure
-#     return uppercase_wrapper()
-#
-# def say_hi():
-#     return 'hello there'
-#
-# # we are passing reference of say_hi to the uppercase_decorator function.
-# # main_wrapper = uppercase_decorator(say_hi)
-# # output = main_wrapper()
-# # print(output)
-#
-#
-# def split_string(function):
-#     def splitstring_wrapper():
-#         func_output = function()
-#
-#         if 'str' in str(type(func_output)):
-#             return func_output.split()
-#         else:
-#             return func_output
-#
-#     return splitstring_wrapper()
-#
-# # main_wrapper1 = split_string(say_hi)
-# # output = main_wrapper1()
-# # print(output)
-#
-# uppercase_decorator_wrapper_ref = uppercase_decorator(say_hi)
-# split_string_wrapper = split_string(uppercase_decorator_wrapper_ref)
-# split_string_output = split_string_wrapper()
-# print(split_string_output)
-#
-#
-# @split_string
-# @uppercase_decorator
-# def say_hi():
-#     return 'hello there'
-#
-#
-# print(say_hi())
-#
-# print("-------------------------------------------------------")
+from functools import wraps
+
+
+# TODO  revisit decorators again.
+# here we are having higher order function which takes function as input and returns wrapper function as output.
+# whatever the function we are passing as the input for closure we are calling that function inside wrapper.
+def uppercase_decorator(function):
+    # here wrapper is a closure
+    def uppercase_wrapper():
+        # here we are making the function executable and making result accessible.
+        func_output = function()
+        make_uppercase = func_output.upper()
+        return make_uppercase
+
+    # returning closure
+    return uppercase_wrapper()
+
+
+def say_hi():
+    return 'hello there'
+
+
+# we are passing reference of say_hi to the uppercase_decorator function.
+# main_wrapper = uppercase_decorator(say_hi)
+# output = main_wrapper()
+# print(output)
+
+
+def split_string(function):
+    def splitstring_wrapper():
+        func_output = function()
+
+        if 'str' in str(type(func_output)):
+            return func_output.split()
+        else:
+            return func_output
+
+    return splitstring_wrapper()
+
+
+# main_wrapper1 = split_string(say_hi)
+# output = main_wrapper1()
+# print(output)
+
+uppercase_decorator_wrapper_ref = uppercase_decorator(say_hi)
+split_string_wrapper = split_string(uppercase_decorator_wrapper_ref)
+split_string_output = split_string_wrapper()
+print(split_string_output)
+
+
+@split_string
+@uppercase_decorator
+def say_hi():
+    return 'hello there'
+
+
+print(say_hi())
+
+print("-------------------------------------------------------")
+
 
 # Passing's Arguments to Decorator
 def decorator_with_arguments(function):
@@ -168,7 +176,7 @@ def net_price(a, b, price="", tax=0.0):
 
 print(net_price(100, 0.05, price=101, tax=0.06))
 
-from functools import wraps
+
 def currency(fn):
     @wraps(fn)
     def wrapper(*args, **kwargs):
@@ -192,5 +200,3 @@ def net_price(price, tax):
 
 help(net_price)
 print(net_price.__name__)
-
-

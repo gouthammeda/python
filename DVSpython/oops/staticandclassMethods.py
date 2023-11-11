@@ -5,9 +5,9 @@ class Dates:
     def getDate(self):
         return self.date
 
-    # if a method is declared with static then we don't need to pass self which stores object reference or address, and they can be accessed using
-    # class name, or we can access it by creating the object. They are mainly used for creation of utility methods.
-    # These are class methods.
+    # if a method is declared with static then we don't need to pass self which stores object reference or address,
+    # and they can be accessed using class name, or we can access it by creating the object. They are mainly used for
+    # creation of utility methods. These are class methods.
     @staticmethod
     def toDashDate(date):
         return date.replace("/", "-")

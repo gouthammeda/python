@@ -40,8 +40,8 @@ finally:
 
 print("Its executed")
 
-# we could use the parent class to handle the exception instead of child reference this is same as mentioned in liskov substitution
-# principle.
+# we could use the parent class to handle the exception instead of child reference this is same as mentioned in
+# liskov substitution principle.
 colors = ['red', 'green', 'blue']
 try:
     print(colors[3])
@@ -139,7 +139,7 @@ except:
     exc_info = sys.exc_info()
     print(exc_info)
 
-import traceback
+
 def division(a, b):
     try:
         return {
@@ -158,6 +158,7 @@ def division(a, b):
 
 result = division(10, 0)
 print(result)
+
 
 # Here we are creating a custom exception class to raise value error if input doesn't fall in the valid range
 
@@ -178,7 +179,8 @@ def fahrenheit_to_celsius(f: float) -> float:
     # The fahrenheit_to_celsius function raises the FahrenheitError exception if the input temperature is not in the
     # valid range. Otherwise, it converts the temperature from Fahrenheit to Celsius.
     if f < FahrenheitError.min_f or f > FahrenheitError.max_f:
-        # if we raise the exception next immediate except block will catch the exception and print will call the magic method __str__.
+        # if we raise the exception next immediate except block will catch the exception and print will call the
+        # magic method __str__.
         raise FahrenheitError(f)
 
     return (f - 32) * 5 / 9

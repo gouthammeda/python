@@ -12,14 +12,15 @@ class Employee:
         self.lastname = lastname
         self.age = age
 
-    # <methods>
-    # if we define a function inside a class then that is called as method but if we define the function outside then it is called as function.
+    # <methods> if we define a function inside a class then that is called as method but if we define the function
+    # outside then it is called as function.
     def print_employee_details(self):
         print(f"employee_id:{self.employee_id},firstname:{self.firstname},lastname:{self.lastname},age:{self.age}")
 
 
-# object is physical entity i.e., it is something that is exists inside the memory and class is logical entity which is defined in english language.
-# this variable is holding the memory address or reference of this object, and we can create multiple references for same object.
+# object is physical entity i.e., it is something that is exists inside the memory and class is logical entity which
+# is defined in english language. this variable is holding the memory address or reference of this object,
+# and we can create multiple references for same object.
 employee = Employee(1, "Goutham", "Meda", 30)
 # using the reference operator we can access the attributes or methods of the class
 employee.print_employee_details()

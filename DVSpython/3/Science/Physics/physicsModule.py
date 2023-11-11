@@ -1,7 +1,3 @@
-"""
-Author : Prudhvi Akella
-"""
-
 
 class Physics(object):
     def __init__(self):

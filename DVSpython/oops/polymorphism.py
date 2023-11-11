@@ -6,7 +6,8 @@ print("Goutham" + "" + "Meda")
 print(2 * 3)
 print("Goutham" * 3)
 
-# function:same function can be used to perform multiple different actions based on arguments passed is operator overloading
+# function:same function can be used to perform multiple different actions based on arguments passed is operator
+# overloading
 print(len("Goutham Meda"))
 print(len(["Hello", "Optimist", 12, 3, True]))
 
@@ -45,7 +46,8 @@ class Circle(Shape):
 
 a = Square(4)
 b = Circle(7)
-# In run time when the object is created based on the type of reference used to call the function that particular classes' method(here area) is called and output is returned which is called as run time polymorphism.
+# In run time when the object is created based on the type of reference used to call the function that particular
+# classes' method(here area) is called and output is returned which is called as run time polymorphism.
 print(a.area())
 print(a.fact())
 

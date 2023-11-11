@@ -17,8 +17,8 @@ print(1.2)
 print(1.2 - 1.0)
 print(10 / 3)
 
-# rel expressions are constructed with relational operators and logical operators and always result in boolean value true or false
-# exp with rel operators
+# rel expressions are constructed with relational operators and logical operators and always result in boolean value
+# true or false exp with rel operators
 a, b, c = 10, 20, 30
 print(a > b)
 print(a < b)

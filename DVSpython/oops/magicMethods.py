@@ -16,8 +16,8 @@ object = Example()
 # the below str method internally calls the __str__ method and returns the output present in it.
 string_object = str(object)
 print(string_object)
-# anything we try to print is by default calls str method which is returning the memory location of object reference currently.
-# print(object)
+# anything we try to print is by default calls str method which is returning the memory location of object reference
+# currently. print(object)
 
 a: int = 10
 a_str = str(a)
@@ -30,10 +30,8 @@ print(a_str1)
 print(len(object))
 
 object1 = Example()
-# print(object1.a)
-# the given memory is deallocated for that particular object and to perform any actions before deleting we can override del method.
-# del object1
-# print(object1.a)
+# print(object1.a) the given memory is deallocated for that particular object and to perform any actions before
+# deleting we can override del method. del object1 print(object1.a)
 
 print("---------")
 
@@ -71,7 +69,8 @@ for item in aList:
 anitr = iter(aList)
 print(anitr)
 
-# when next() is being applied on anitr it returns current element and stores next elements memory location or reference in it.
+# when next() is being applied on anitr it returns current element and stores next elements memory location or
+# reference in it.
 print(next(anitr))
 print(next(anitr))
 print(next(anitr))
@@ -90,7 +89,8 @@ class Reverse:
         self.index = len(data)
 
     def __iter__(self):
-        # if we return self then it will call next method of this class but if we return string then it will call string class next method.
+        # if we return self then it will call next method of this class but if we return string then it will call
+        # string class next method.
         return self
 
     def __next__(self):
@@ -113,7 +113,8 @@ print(next(iter_reverse))
 # for char in rev:
 #     print(char)
 
-# using item as a reference of values stored in the list we are able to access and iterate over elements using iter and next methods
+# using item as a reference of values stored in the list we are able to access and iterate over elements using iter
+# and next methods
 aList = [1, 2, 3, 4, 5, 6]
 for item in aList:
     print(id(item))

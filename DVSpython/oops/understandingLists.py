@@ -1,11 +1,9 @@
 # aList = []
 # print(aList.__sizeof__())
 #
-# # list contains the references of objects that are created instead of actual values that is why they are called containers of objects,they store multiple
-# # object references in a single variable which are accessible with indexes.
-# # 40(initial size of empty list)+8+8+8+8 = 72
-# aList.append(10)
-# print(aList.__sizeof__())
+# # list contains the references of objects that are created instead of actual values that is why they are called
+# containers of objects,they store multiple # object references in a single variable which are accessible with
+# indexes. # 40(initial size of empty list)+8+8+8+8 = 72 aList.append(10) print(aList.__sizeof__())
 #
 # aList.append(20)
 # print(aList.__sizeof__())
@@ -17,11 +15,9 @@
 # print(aList.__sizeof__())
 # print(aList)
 #
-# # when we add below element of 8 bytes to a new index in list along with it 3 more new reserve spaces will be created of 24 bytes.
-# # going forward when list gets exhausted a new element will be added and new set of 24 will be opened up
-# aList.append(50)
-# print(aList.__sizeof__())
-# print(aList)
+# # when we add below element of 8 bytes to a new index in list along with it 3 more new reserve spaces will be
+# created of 24 bytes. # going forward when list gets exhausted a new element will be added and new set of 24 will be
+# opened up aList.append(50) print(aList.__sizeof__()) print(aList)
 #
 # aList.append(60)
 # print(aList.__sizeof__())

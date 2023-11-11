@@ -18,7 +18,8 @@ class Person:
         if age <= 0:
             # here we are raising error if age of person is less than 0
             raise ValueError("The age must be positive")
-        # we are making instance variable private so that it can't be accessed or modified by object reference outside the class.
+        # we are making instance variable private so that it can't be accessed or modified by object reference
+        # outside the class.
         self.__age = age
 
     def get_age(self):

@@ -5,8 +5,8 @@
 # for whole .py file the compiler will generate the .pyc file then each of the statement is executed by pvm.
 
 # pvm contains the python memory manager which talks with os memory manager to create objects in private heap memory.
-# few objects reference count will never be zero that is which has circular references and two objects reference each other.
-# to reclaim memory in such cases we use garbage collector.
+# few objects reference count will never be zero that is which has circular references and two objects reference each
+# other. to reclaim memory in such cases we use garbage collector.
 
 import gc
 import ctypes

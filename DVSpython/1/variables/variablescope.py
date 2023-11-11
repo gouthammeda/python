@@ -1,5 +1,6 @@
 def f():
-    # local variable-> variable is not available outside the function, once the value is returned back the allocated memory for function execution will be de-allocated.
+    # local variable-> variable is not available outside the function, once the value is returned back the allocated
+    # memory for function execution will be de-allocated.
     k = "I love Python"
     print(k)
 

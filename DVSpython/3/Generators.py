@@ -1,10 +1,10 @@
-# yield is used to generate an iterator object which is iterable and lazy meaning it will produce new value only when next()
-# keyword is given.
+# yield is used to generate an iterator object which is iterable and lazy meaning it will produce new value only when
+# next() keyword is given.
 
 # difference between yield and return --> when we say the function yield the state of the function is hold in-memory
-# when return is called the function stack-frame is completely removed from memory.
-# yield helps to return value at multiple places within a function, with return we can use only one time to get back output.
-# we can iterate over the yield object, but we can't iterate over return object as it returns an integer.
+# when return is called the function stack-frame is completely removed from memory. yield helps to return value at
+# multiple places within a function, with return we can use only one time to get back output. we can iterate over the
+# yield object, but we can't iterate over return object as it returns an integer.
 def greeting():
     print("Hi!")
     yield 1

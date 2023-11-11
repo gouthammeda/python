@@ -1,8 +1,3 @@
-"""
-Author : Prudhvi Akella
-Module1
-"""
-
 import sys
 
 

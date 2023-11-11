@@ -11,9 +11,10 @@ print("---------")
 
 
 # Recursive function and Tail Recursion
-# function call is keep happening until an exit condition is met.
-# whenever a function call happens stack frame will be created and has to exist in memory, and it will be de-allocated once value has been given back.
-# all the execution happens within the stack-frame.Traditional recursion uses multiple stack-frames but tail recursion uses only one stack frame.
+# function call is keep happening until an exit condition is met. whenever a
+# function call happens stack frame will be created and has to exist in memory, and it will be de-allocated once
+# value has been given back. all the execution happens within the stack-frame.Traditional recursion uses multiple
+# stack-frames but tail recursion uses only one stack frame.
 def fact(a):
     if a == 1:
         return a

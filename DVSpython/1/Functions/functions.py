@@ -54,8 +54,8 @@ def multiply_2(a):
     return a * 2
 
 
-# function will be evaluated to a value when it is passed as an argument result is then passed as argument to next function which returns the
-# final result which is known as function evaluation.
+# function will be evaluated to a value when it is passed as an argument result is then passed as argument to next
+# function which returns the final result which is known as function evaluation.
 print(multiply_2(add(1, 2)))
 print(multiply_2(3))
 
@@ -70,7 +70,8 @@ def multiply_2_higher_order_fun(a):
     return a(1, 2) * 2
 
 
-# we passed function reference as an argument or address of add to function which means parameter 'a' acts like alias to that function, but it is not a function call as it is not called with arguments.
+# we passed function reference as an argument or address of add to function which means parameter 'a' acts like alias
+# to that function, but it is not a function call as it is not called with arguments.
 print(multiply_2_higher_order_fun(add))
 
 

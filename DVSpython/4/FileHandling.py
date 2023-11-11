@@ -41,7 +41,7 @@ with open("sample.txt", 'r') as file:
 
     # let's now reset the offset using seek
     file.seek(0)
-    # tell method is used know the  current offset file handler is pointing to
+    # tell method is used know the current offset file handler is pointing to
     current_offset = file.tell()
     print("tell after offset reset", current_offset)
     print("--------Reading first 40 chars after seeking offset to 0 ----------")

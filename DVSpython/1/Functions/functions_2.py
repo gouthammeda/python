@@ -4,7 +4,8 @@ def sum_default_parameters(a, c, b=2):
 
 
 print(sum_default_parameters(1, 2))
-# all the default parameters should be defined at the end after the non-default parameters and value given in arguments will overwrite the parameters.
+# all the default parameters should be defined at the end after the non-default parameters and value given in
+# arguments will overwrite the parameters.
 print(sum_default_parameters(1, 4, 5))
 
 
@@ -24,7 +25,7 @@ def sum_variable_number_of_arguments(*args):
     print(args)
     a = 0
     total = 0
-    finalString = ""
+    finalstring = ""
     # print(type(args))
     while len(args) > a:
         value = args[a]
@@ -43,7 +44,8 @@ def sum_variable_number_of_arguments(*args):
 print(sum_variable_number_of_arguments(1, 4, 5, "Goutham", 6, 7, "Meda", 10.4, (1, 2, 3)))
 
 
-# for *args paramter we can give different number of positional arguments and for **kwanything we can give different number of keyword arguments
+# for *args parameter we can give different number of positional arguments and for **kwanything we can give different
+# number of keyword arguments
 def sum_keyword_variable_number_of_arguments(a, b, c, *args, **kwargs):
     print(a, b, c)
     print(type(args))

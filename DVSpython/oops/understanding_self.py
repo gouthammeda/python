@@ -1,5 +1,6 @@
 class Employee:
-    # any variables defined outside the init method is class level attributes, and it will have same value for all the objects
+    # any variables defined outside the init method is class level attributes, and it will have same value for all
+    # the objects
     department = "cse"
 
     # Remember the first argument of __init__ will always be self to hold the address of current
@@ -10,7 +11,8 @@ class Employee:
         self.firstname = firstname
         self.lastname = lastname
         self.age = age
-        # when we have both class level and object level attributes then priority will be given to object/instance level attributes.
+        # when we have both class level and object level attributes then priority will be given to object/instance
+        # level attributes.
         self.department = department
 
     # when we call a method with reference of object then self will be same memory location of that particular object

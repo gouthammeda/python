@@ -2,9 +2,8 @@ import copy
 
 old_list = [[1, 2, 3], [4, 5, 6], [7, 8, 'a']]
 
-# when we create new_list as reference variable then old list reference is copied into new_list so any changes done to new list will
-# affect old_list.
-# reference copy
+# when we create new_list as reference variable then old list reference is copied into new_list so any changes done
+# to new list will affect old_list. reference copy
 new_list = old_list
 new_list[2][2] = 9
 
@@ -35,15 +34,15 @@ new_list[2][2] = 9
 print(old_list)
 print(new_list)
 
-# when append change is only happening to new_list but not to the old one but assignment operator apply changes to both of lists.
+# when append change is only happening to new_list but not to the old one but assignment operator apply changes to
+# both of lists.
 new_list.append([10, 20])
 print(old_list)
 print(new_list)
 
-# if we perform any change to the existing element state in list then it is affecting both the lists then it is doing shallow copy
-# but if we are not touching the existing element but adding new element then change is happening to only that list but not both the
-# lists.
-# memory locations are different.
+# if we perform any change to the existing element state in list then it is affecting both the lists then it is doing
+# shallow copy but if we are not touching the existing element but adding new element then change is happening to
+# only that list but not both the lists. memory locations are different.
 print(id(old_list))
 print(id(new_list))
 
@@ -56,7 +55,8 @@ import copy
 
 old_list = [[1, 2, 3], [4, 5, 6], [7, 8, 'a']]
 
-# each object has its own memory location, so if we perform any of the reassignment operation reflection will not happen on them.
+# each object has its own memory location, so if we perform any of the reassignment operation reflection will not
+# happen on them.
 new_list = copy.deepcopy(old_list)
 
 new_list[2][2] = 9
