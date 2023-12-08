@@ -43,5 +43,3 @@ def fact(n, acc):
 
 
 print(fact(3, 1))
-
-

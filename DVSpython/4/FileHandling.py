@@ -1,3 +1,4 @@
+import csv
 # opening a file in read mode
 f = open("sample.txt", 'r')
 
@@ -14,11 +15,10 @@ with open("sample.txt", 'r') as file:
     for line in file:
         print(line)
 
-with open("sample.txt",'r') as file:
+with open("sample.txt", 'r') as file:
     file_content = file.read()
     print(type(file_content))
     print(file_content)
-
 
 with open("sample.txt", 'r') as file:
     # User can also pass optional argument to read method  offset
@@ -37,7 +37,7 @@ with open("sample.txt", 'r') as file:
     print(len(first_40_chars))
     # tell method is used know the  current offset file handler is pointing to
     current_offset = file.tell()
-    print("current offset is",current_offset)
+    print("current offset is", current_offset)
 
     # let's now reset the offset using seek
     file.seek(0)
@@ -55,11 +55,10 @@ with open("sample.txt", 'r') as file:
     for line in lines:
         print("first line is", line)
 
-
 print("--writing data to file--")
 
 # writing content into a file
-file = open('sample_write.txt','w')
+file = open('sample_write.txt', 'w')
 
 file.write("Hello World\n")
 file.write("Be optimistic\n")
@@ -68,23 +67,20 @@ file.write("Everything will be alright\n")
 file.close()
 
 # if file exists then content will be overriden.
-with open('sample_write.txt','w+') as file:
+with open('sample_write.txt', 'w+') as file:
     for i in range(3):
         file.write(f'line {i} \n')
 
 # open the file for both read and write if file already exists then content will be appended to an end of file
 
-file = open('sample_write.txt','a+')
+file = open('sample_write.txt', 'a+')
 file.write("Hello world \n")
 file.write("Be optimistic \n")
 file.write("Everything will be alright \n")
 
 file.close()
 
-
 print("-------------------------------- Processing CSV file ----------------------------------------------")
-import csv
-
 csv_filepath_to_process = "/Users/gouthamkumarreddymeda/workspace/PycharmProjects/DVSpython/4/csv/csv1.csv"
 file = open(csv_filepath_to_process, 'r')
 csv_reader = csv.reader(file, delimiter=",")
@@ -100,15 +96,3 @@ for line in csv_reader:
 reader = csv.reader(file, quoting=csv.QUOTE_MINIMAL, skipinitialspace=True)
 for line in csv_reader:
     print(line)
-
-
-
-
-
-
-
-
-
-
-
-
