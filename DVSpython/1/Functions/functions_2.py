@@ -22,6 +22,7 @@ print(sum_default_parameters(1, 2, d=6, f=4))
 
 # variable number of arguments
 def sum_variable_number_of_arguments(*args):
+    global finalString
     print(args)
     a = 0
     total = 0

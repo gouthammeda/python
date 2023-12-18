@@ -1,4 +1,4 @@
-# if code block--always pass relational expression so that they return boolean values
+# if code block -- always pass relational expression so that they return boolean values
 # always the inner code is tab indented.
 """
 Syntax:
@@ -61,7 +61,7 @@ else:
         print('grandmother')
 
 # single line if statement
-if 'f' in 'foo': print('1');print(2);print('3')
+if 'f' in 'foo': print('1'); print(2); print('3')
 
 print("----------")
 x = 2
