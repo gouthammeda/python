@@ -28,7 +28,7 @@ pre_add = address["previous_address"]
 add2 = pre_add["add2"]
 print(add2)
 
-print(((aDict["address"])["previous_address"])["add2"])
+print("hi",((aDict["address"])["previous_address"])["add2"])
 
 print("------create dictionary-------")
 my_dict = {}
@@ -101,7 +101,7 @@ state = output_dict['addresses'][1]['address3']['state']  # AP
 city = output_dict['addresses'][1]['address3'][
     'city']  # HYD # get the value of city(KEY)  from addresses.1.address3 and storing the value into city variable
 output_dict['addresses'][1][
-    'state'] = state  # create key state under the addresses 1st element and assign value stored in state varaible to it
+    'state'] = state  # create key state under the addresses 1st element and assign value stored in state variable to it
 output_dict['addresses'][1][
     'city'] = city  # create key city under the addresses 1st element and assign value stored in state variable to it
 output_dict['addresses'][1]['address3'] = {}
